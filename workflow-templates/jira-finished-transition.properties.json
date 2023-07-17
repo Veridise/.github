@@ -1,0 +1,4 @@
+{
+    "name": "Jira: To Finished Transition.",
+    "description": "Transition issue to Finished once its branch is merged to default branch."
+}
