@@ -1,4 +1,4 @@
 {
     "name": "Jira: Transition Issue to In Review",
-    "description": "Transition an issue to 'In Review' once its PR is ready for review.",
+    "description": "Transition an issue to In Review once its PR is ready for review.",
 }

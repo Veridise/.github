@@ -1,4 +1,4 @@
 {
-    "name": "Jira: Transition Issue to \"To Merge\" State",
-    "description": "Transition an issue to 'To Merge' once its PR is approved.",
+    "name": "Jira: Transition Issue to To Merge State",
+    "description": "Transition an issue to To Merge once its PR is approved.",
 }
