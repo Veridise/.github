@@ -32,8 +32,8 @@ jobs:
         # want to increase it in the future.
         # approvals: 2
         check_changes_requested: false
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # env:
+      #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Find Issue Key
       id: find
