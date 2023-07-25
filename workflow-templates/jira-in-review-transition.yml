@@ -7,10 +7,9 @@ on:
 name: Transition Issue to In Review
 
 jobs:
-  transition-issue:
-    runs-on: ubuntu-latest
-    uses: Veridise/.github/workflows/jira-in-review-transition-core.yml@main
+  call-workflow:
+    uses: Veridise/.github/.github/workflows/jira-in-review-transition-core.yml@main
     with:
-        head-ref: ${{ github.head_ref }}
-        is-draft: github.event.pull_request.draft
+      head-ref: ${{ github.head_ref }}
+      is-draft: ${{ github.event.pull_request.draft }}
     secrets: inherit

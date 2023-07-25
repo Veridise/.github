@@ -7,11 +7,9 @@ on:
 name: Transition Issue to Done
 
 jobs:
-  transition-issue:
-    runs-on: ubuntu-latest
-    uses: Veridise/.github/workflows/jira-finished-transition-core.yml@main
+  call-workflow:
+    uses: Veridise/.github/.github/workflows/jira-finished-transition-core.yml@main
     with:
-        head-ref: ${{ github.head_ref }}
-        merged: ${{ github.event.pull_request.merged  }}
+      head-ref: ${{ github.head_ref }}
+      is-draft: ${{ github.event.pull_request.merged }}
     secrets: inherit
-

@@ -7,9 +7,8 @@ on:
 name: Transition Issue to "To Merge" State
 
 jobs:
-  transition-issue:
-    runs-on: ubuntu-latest
-    uses: Veridise/.github/workflows/jira-to-merge-transition-core.yml@main
+  call-workflow:
+    uses: Veridise/.github/.github/workflows/jira-to-merge-transition-core.yml@main
     with:
-        head-ref: ${{ github.event.pull_request.head.ref }}
+      head-ref: ${{ github.event.pull_request.head.ref }}
     secrets: inherit
