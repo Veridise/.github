@@ -11,5 +11,5 @@ jobs:
     uses: Veridise/.github/.github/workflows/jira-finished-transition-core.yml@main
     with:
       head-ref: ${{ github.head_ref }}
-      is-draft: ${{ github.event.pull_request.merged }}
+      merged: ${{ github.event.pull_request.merged }}
     secrets: inherit
