@@ -8,6 +8,11 @@ name: Transition Issue to In Review
 
 jobs:
   call-workflow:
+    if: ${{ 
+      secrets.JIRA_BASE_URL   != '' 
+      && secrets.JIRA_USER_EMAIL != '' 
+      && secrets.JIRA_API_TOKEN  != '' 
+    }}
     uses: Veridise/.github/.github/workflows/jira-in-review-transition-core.yml@main
     with:
       head-ref: ${{ github.head_ref }}

@@ -17,10 +17,7 @@ on:
 
 jobs:
   transition-issue:
-    if: ${{ !inputs.is-draft
-         && secrets.JIRA_BASE_URL != '' 
-         && secrets.JIRA_USER_EMAIL != '' 
-         && secrets.JIRA_API_TOKEN != '' }}
+    if: ${{ !inputs.is-draft }}
     name: Transition Issue to In Review
     runs-on: ubuntu-latest
     steps:
